@@ -16,72 +16,84 @@
     <div class="banner">
       <h1>facebook</h1>
       <div class="form">
-        <label for="Username" id="c">Username</label><br /><br />
+        <label for="Username" id="c">Username or Email</label><br />
         <input type="text" required />
         <label for="enterpassword" id="b">Password</label>
         <input type="text" required />
-        <input type="submit" value="login" id="a" />
+        <input type="submit" value="Log In" id="a" />
       </div>
       <a
         href="https://www.facebook.com/login/identify/?ctx=recover&ars=facebook_login&front"
-        >forgot password?</a
-      >
+        id="forgot"
+        >forgot password?
+      </a>
     </div>
     <!-- HEADER-BAR-ENDS -->
 
     <!-- BODY-DATA-START -->
     <div class="body"></div>
-    <h1>Connect with the friends and the world around you on Facebook.</h1>
+    <h1 id="connect">
+      Connect with the friends and the <br />
+      world around you on Facebook.
+    </h1>
     <div>
       <img src="./icons/page-64.png" alt="" />
       <span>See Photos and Updates</span>
+      <span class="p">from friends in News Feed.</span>
     </div>
     <div>
       <img src="./icons/imac-64.png" alt="" />
       <span>Share whats new</span>
+      <span class="p">in your life in your Timeline.</span>
     </div>
     <div>
       <img src="./icons/recycle-64.png" alt="" />
       <span>Find more</span>
+      <span class="p">of you are looking for with Facebook Search.</span>
     </div>
     <div class="signup">
-      <h1>Signup</h1>
-      <h5>its free and always will be.</h5>
+      <h1>Sign Up</h1>
+      <h4>It's free and always will be.</h4>
       <form id="d">
         <input type="text" placeholder="First name" required />
         <input type="text" placeholder="Last name" required /><br /><br />
         <input
           type="text"
-          placeholder="email"
+          placeholder="Mobile number or email"
           required
           size="46px"
         /><br /><br />
         <input type="text" placeholder="Password" size="46px" /><br /><br />
-        <h3>Birthday</h3>
-        <br />
-        <br />
-        <br />
-        <br />
-        <input type="date" required />
-        <input type="radio" name="gender" /> Male
-        <input type="radio" name="gender" /> Female
-        <input type="submit" value="SignUp" id="o" />
-      </form>
-      <a href="https://www.facebook.com/legal/terms/update"
-        >Why I need to provide my birthday details?</a
-      >
-      <h5>
-        by clicking signup, you accept our
-        <a href="https://www.facebook.com/legal/terms"> Terms, </a
-        ><a href="https://www.facebook.com/privacy/policy"> Data policies </a>
-        and
-        <a
-          href="https://www.facebook.com/privacy/policies/cookies/?entry_point=cookie_policy_redirect&entry=0"
+        <h3
+          style="
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+              'Lucida Sans', Arial, sans-serif;
+          "
         >
-          Cookies policy</a
-        >.You may reciesve SMS notification from us anytime and you may opt out
-        anytime.
-      </h5>
+          Birthday
+        </h3>
+        <input type="date" required /><br /><br />
+        <input type="radio" name="gender" /> Male
+        <input type="radio" name="gender" /> Female <br /><br />
+        <p id="warning">
+          by clicking signup, you accept our
+          <a href="https://www.facebook.com/legal/terms"> Terms, </a
+          ><a href="https://www.facebook.com/privacy/policy"> Data policies </a>
+          and
+          <a
+            href="https://www.facebook.com/privacy/policies/cookies/?entry_point=cookie_policy_redirect&entry=0"
+          >
+            Cookies policy</a
+          >.You may reciesve SMS notification from us anytime and you may opt
+          out anytime.
+        </p>
+        <br /><br /><br />
+        <input type="submit" value="Sign Up" id="o" />
+      </form>
+      <a href="https://www.facebook.com/legal/terms/update" id="m"
+        >Why I need to <br />
+        provide my birthday details?</a
+      >
     </div>
   </body>
   <!-- BODY-DATA-ENDS -->
